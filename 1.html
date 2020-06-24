@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+                .container{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 50px 50px;
+                    grid-gap: 30px;
+                }
+                img{
+                    height: 60px;
+                    width: 100px;
+                }
+                @media(max-width: 500px){
+                    
+                .container{
+                   display: grid;
+                   grid-template-columns: repeat(2, 1fr);
+                   grid-template-rows: repeat(4, 50px);
+                }
+
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div><img src="project6.png" /></div>
+            <div><img src="project6.png" /></div>
+            <div><img src="project6.png" /></div>
+            <div><img src="project6.png" /></div>
+            <div><img src="project6.png" /></div>
+            <div><img src="project6.png" /></div>
+        </div>
+    </body>
+</html>

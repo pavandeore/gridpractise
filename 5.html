@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            .container{
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 40px auto 40px;
+                grid-gap: 3px;
+                grid-template-areas:
+                "h h h h"
+                "m c c c"
+                "f f f f";
+            }
+            .a{
+                padding: 10px;
+                background: red;
+                grid-area: h;
+            }
+            .b{
+                padding: 10px;
+                background: black;
+                color: white;
+                grid-area: m;
+            }
+            .c{
+                padding: 10px;
+                background: green;
+                grid-area: c;
+            }
+            .d{
+                padding: 10px;
+                background: yellow;
+                grid-area: f;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="a">Header</div>
+            <div class="b">Menu</div>
+            <div class="c">Content</div>
+            <div class="d">Footer</div>
+        </div>
+    </body>
+</html>

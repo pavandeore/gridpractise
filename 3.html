@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+               .container{
+                   display: grid;
+                   grid-template-columns: repeat(2, 1fr);
+                   grid-template-rows: repeat(2, 50px);
+                   grid-gap: 20px;
+               }
+               img{
+                   height: 60px;
+                   width: 100px;
+               }
+               .a{
+                   grid-column: 2 / -1;
+               }
+               .b{
+                    grid-row: 1 /-1;
+               }
+               .c{
+
+               }
+               .d{
+                  grid-column: 2 / -1;
+               }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="a"><img src="project6.png" /></div>
+            <div class="b"><img src="project6.png" /></div>
+            <div class="c"><img src="project6.png" /></div>
+            <div class="d"><img src="project6.png" /></div>
+        </div>
+    </body>
+</html>
