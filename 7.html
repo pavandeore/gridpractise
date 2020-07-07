@@ -1,0 +1,59 @@
+<html>
+    <style>
+.a{
+    background: red;
+    padding: 5px;
+}
+.b{
+    background: orange;
+    padding: 5px;
+}
+.c{
+    background: pink;
+    padding: 5px;
+}
+.d{
+    background: blue;
+    padding: 5px;
+}
+.e{
+    background: green;
+    padding: 5px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "h h h h"
+    "m m p p"
+    "c c f f"
+    ;
+}
+.a{
+    grid-area: h;
+}
+.b{
+    grid-area: p;
+}
+.c{
+    grid-area: m;
+}
+.d{
+    grid-area: h;
+}
+.e{
+
+}
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="a">Home</div>
+            <div class="b">Porfolio</div>
+            <div class="c">Menu</div>
+            <div class="d">Content</div>
+            <div class="e">Footer</div>
+        </div>
+    </body>
+</html>
